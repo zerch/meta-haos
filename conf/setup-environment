@@ -1,0 +1,21 @@
+#!/bin/sh
+if [ -n "$BASH_SOURCE" ]; then
+   OEROOT="`dirname $BASH_SOURCE`"
+elif [ -n "$ZSH_NAME" ]; then
+   OEROOT="`dirname $0`"
+else
+   OEROOT="`pwd`"
+fi
+if [ -n "$BBSERVER" ]; then
+   unset BBSERVER
+fi
+THIS_SCRIPT=$OEROOT/oe-init-build-env
+ 
+if [ -z "$ZSH_NAME" ] && [ "$0" = "$THIS_SCRIPT" ]; then
+   echo "Error: This script needs to be sourced. Please run as '. $THIS_SCRIPT'"
+   exit 1
+fi
+
+export TEMPLATECONF=../meta-haos/conf/
+source ./poky/oe-init-build-env $1
+
