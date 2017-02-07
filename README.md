@@ -6,9 +6,13 @@ Currently only holding config samples to be used for TEMPLATECONF,
 not a real layer yet.
 
 This depends on:
+
     URI: git://git.yoctoproject.org/poky.git
+
     URI: git://git.openembedded.org/meta-openembedded
+
     URI: https://github.com/meta-qt5/meta-qt5.git
+
     URI: git://git.yoctoproject.org/meta-raspberrypi
 
 How to setup and start build:
