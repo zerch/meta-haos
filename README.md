@@ -7,13 +7,13 @@ not a real layer yet.
 
 This depends on:
 
-    URI: git://git.yoctoproject.org/poky.git
+    git clone -b morty git://git.yoctoproject.org/poky.git
 
-    URI: git://git.openembedded.org/meta-openembedded
+    git clone -b morty git://git.openembedded.org/meta-openembedded
 
-    URI: https://github.com/meta-qt5/meta-qt5.git
+    git clone -b morty https://github.com/meta-qt5/meta-qt5.git
 
-    URI: git://git.yoctoproject.org/meta-raspberrypi
+    git clone -b morty git://git.yoctoproject.org/meta-raspberrypi
 
 How to setup and start build:
 
