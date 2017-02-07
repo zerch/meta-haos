@@ -1,4 +1,4 @@
-This is my custom layer for raspberrypi layer from yocto community.
+This is my custom layer to work on top of raspberrypi layer from yocto community.
 
 Aiming to create a 'systemd' based rpi basic image
 
