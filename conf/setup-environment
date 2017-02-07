@@ -1,11 +1,5 @@
 #!/bin/sh
-if [ -n "$BASH_SOURCE" ]; then
-   OEROOT="`dirname $BASH_SOURCE`"
-elif [ -n "$ZSH_NAME" ]; then
-   OEROOT="`dirname $0`"
-else
-   OEROOT="`pwd`"
-fi
+OEROOT=$PWD/poky
 if [ -n "$BBSERVER" ]; then
    unset BBSERVER
 fi
