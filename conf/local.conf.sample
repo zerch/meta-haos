@@ -48,7 +48,8 @@ MACHINE ?= "raspberrypi3"
 #
 # The default is a downloads directory under TOPDIR which is the build directory.
 #
-#DL_DIR ?= "${TOPDIR}/downloads"
+# Using same download dir for all builds for space concerns
+DL_DIR ?= "${TOPDIR}/../downloads"
 
 #
 # Where to place shared-state files
