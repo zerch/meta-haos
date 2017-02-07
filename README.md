@@ -2,9 +2,6 @@ This is my custom layer to work on top of raspberrypi layer from yocto community
 
 Aiming to create a 'systemd' based rpi basic image
 
-Currently only holding config samples to be used for TEMPLATECONF,
-not a real layer yet.
-
 This depends on:
 
     git clone -b morty git://git.yoctoproject.org/poky.git
