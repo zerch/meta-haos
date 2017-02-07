@@ -1,0 +1,3 @@
+RPI images:
+    rpi-basic-image
+    rpi-test-image
