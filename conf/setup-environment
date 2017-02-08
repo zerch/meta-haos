@@ -4,7 +4,7 @@ if [ -n "$BBSERVER" ]; then
    unset BBSERVER
 fi
 THIS_SCRIPT=$OEROOT/oe-init-build-env
- 
+
 if [ -z "$ZSH_NAME" ] && [ "$0" = "$THIS_SCRIPT" ]; then
    echo "Error: This script needs to be sourced. Please run as '. $THIS_SCRIPT'"
    exit 1
