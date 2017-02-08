@@ -1,6 +1,7 @@
 This is my custom layer to work on top of raspberrypi layer from yocto community.
 
 How to setup and start build:
+
     1.) Clone this repo.
 
     2.) Run "scripts/start_project.sh" with your custom setup. (Check "--help")
@@ -17,5 +18,5 @@ How to setup and start build:
 
     OR
 
-    At step 2.), run "start_project.sh" with "-c" option to automatically create and check build environment and parse recipes
+    At step 2*.)  run "start_project.sh" with "-c" option to automatically create and check build environment and parse recipes
 
