@@ -12,14 +12,15 @@
 
   <project name="zerch/meta-haos" path="meta-haos">
     <linkfile dest="README.md" src="README.md"/>
-    <linkfile dest="setup-environment" src="setup-environment"/>
-    <linkfile dest="setup_yocto_project.sh" src="setup_yocto_project.sh"/>
+    <linkfile dest="setup-environment" src="scripts/setup-environment"/>
+    <linkfile dest="../setup_yocto_project.sh" src="scripts/setup_yocto_project.sh"/>
   </project>
 
   <!-- Base distribution -->
-  <project name="poky" remote="yoctoproject" revision="morty"/>
+  <!--project name="poky" remote="yoctoproject" revision="morty"/>
+  <project name="meta-raspberrypi" remote="yoctoproject" revision="morty"/>
   <project name="meta-openembedded" remote="openembedded" revision="morty"/>
-  <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5" revision="morty"/>
+  <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5" revision="morty"/-->
 
 </manifest>
 
