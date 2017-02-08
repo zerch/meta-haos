@@ -72,7 +72,7 @@ if [ "$project_uri" = "" ]; then
         [ "$project_uri" = "" ] && project_uri=$default_project_uri
 fi
 if [ "$project_rev" = "" ]; then
-        read -e -p "Enter project URI(default: $default_project_rev): " project_rev
+        read -e -p "Enter project Revision(default: $default_project_rev): " project_rev
         [ "$project_rev" = "" ] && project_rev=$default_project_rev
 fi
 
