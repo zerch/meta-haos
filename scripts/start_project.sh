@@ -159,12 +159,11 @@ if [ ${check} != 0 ]; then
     unset BUILDDIR
     echo Done - Successful
     echo ------------------------------------------------------------
+else
+    echo ------------------------------------------------------------
+    echo "The project is set up and synced, to work with it"
+    echo "please change to project folder and source the settings:"
+    echo " cd ${prj_dir}"
+    echo " source setup-environment"
+    echo ------------------------------------------------------------
 fi
-
-echo ------------------------------------------------------------
-echo "The project is set up and synced, to work with it"
-echo "please change to project folder and source the settings:"
-echo " cd ${prj_dir}"
-echo " source setup-environment"
-echo ------------------------------------------------------------
-
