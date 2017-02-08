@@ -147,12 +147,6 @@ if [ ${check} != 0 ]; then
     echo ------------------------------------------------------------
     echo Check project setup
     source setup-environment
-    if [ "$(pwd)" != "${prj_dir}/build" ] ; then
-      echo Failed to source the settings. Aborting...
-      echo ------------------------------------------------------------
-      exit 1
-    fi
-
     bitbake -p
     if [ ! $? ]; then
       echo Failed to check project setup. Aborting...
