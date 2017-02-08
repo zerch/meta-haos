@@ -146,7 +146,9 @@ echo ------------------------------------------------------------
 if [ ${check} != 0 ]; then
     echo ------------------------------------------------------------
     echo Check project setup
+    pwd
     source setup-environment
+    pwd
     if [ "$(pwd)" != "${prj_dir}/build" ] ; then
       echo Failed to source the settings. Aborting...
       echo ------------------------------------------------------------
