@@ -5,13 +5,13 @@ How to setup and start build:
 
     2.) Run "scripts/start_project.sh" with your custom setup. (Check "--help")
 
-        This will create the project directory with all required layers
+        This will create a repo project directory with all required layers
 
-    3.) source setup-environent and create the build folder:
+    3.) Change dir to project and source setup-environent to create the build folder:
 
         % source setup-environment build
 
-    4.) run bitbake with rpi base image:
+    4.) Run bitbake with rpi base image:
 
         % bitbake rpi-base-image
 
