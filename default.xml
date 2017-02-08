@@ -16,10 +16,10 @@
   </project>
 
   <!-- Base distribution -->
-  <!--project name="poky" remote="yoctoproject" revision="morty"/>
+  <project name="poky" remote="yoctoproject" revision="morty"/>
   <project name="meta-raspberrypi" remote="yoctoproject" revision="morty"/>
   <project name="meta-openembedded" remote="openembedded" revision="morty"/>
-  <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5" revision="morty"/-->
+  <project name="meta-qt5/meta-qt5" remote="github" path="meta-qt5" revision="morty"/>
 
 </manifest>
 
