@@ -15,3 +15,7 @@ How to setup and start build:
 
         % bitbake rpi-base-image
 
+    OR
+
+    At step 2.), run "start_project.sh" with "-c" option to automatically create and check build environment and parse recipes
+
