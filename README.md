@@ -12,9 +12,9 @@ How to setup and start build:
 
         % source setup-environment build
 
-    4.) Run bitbake with rpi base image:
+    4.) Run bitbake with haospi base image:
 
-        % bitbake rpi-base-image
+        % bitbake haospi-basic-image
 
     OR
 
