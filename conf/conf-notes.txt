@@ -1,3 +1,5 @@
 RPI images:
+    rpi-hwup-image
     rpi-basic-image
     rpi-test-image
+    haospi-basic-image
