@@ -12,8 +12,8 @@ else
   default_base_dir=$yocto_base_dir
 fi
 default_project_uri="https://github.com/zerch/meta-haos.git"
-
-while getopts "b:cd:fp:" OPT; do
+default_project_rev="morty"
+while getopts "b:cd:r:fp:" OPT; do
   case $OPT in
     b)
       base_dir=$OPTARG
@@ -23,6 +23,9 @@ while getopts "b:cd:fp:" OPT; do
       ;;
     d)
       prj_dir=$OPTARG
+      ;;
+    r)
+      project_rev=$OPTARG
       ;;
     f)
       force=1
@@ -37,6 +40,7 @@ while getopts "b:cd:fp:" OPT; do
       echo "  -f            Force checkout - will wipe project directory if it exists"
       echo "  -c            Check project setup"
       echo "  -p <prj_uri>  Project URI"
+      echo "  -r <prj_rev>  Project Revision"
       exit 1
       ;;
   esac
@@ -66,6 +70,10 @@ fi
 if [ "$project_uri" = "" ]; then
         read -e -p "Enter project URI(default: $default_project_uri): " project_uri
         [ "$project_uri" = "" ] && project_uri=$default_project_uri
+fi
+if [ "$project_rev" = "" ]; then
+        read -e -p "Enter project URI(default: $default_project_rev): " project_rev
+        [ "$project_rev" = "" ] && project_rev=$default_project_rev
 fi
 
 if [ "$prj_dir" = "" ]; then
@@ -115,7 +123,7 @@ echo ------------------------------------------------------------
 echo Initializing repo
 
 
-repo init -u ${project_uri}
+repo init -u ${project_uri} -b ${project_rev}
 if [ ! $? ]; then
   echo Failed to initialize repo. Aborting...
   echo ------------------------------------------------------------
