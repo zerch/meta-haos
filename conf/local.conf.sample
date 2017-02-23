@@ -615,3 +615,5 @@ NOHDD = "1"
 
 #PREFERRED_PROVIDER_virtual/java = "oracle-jse-jre"
 #PREFERRED_PROVIDER_virtual/java-native = "oracle-jse-jre-native"
+
+GPU_MEM = "16"

@@ -3,3 +3,4 @@ RPI images:
     rpi-basic-image
     rpi-test-image
     haospi-basic-image
+    haospi-basic-dev-image
